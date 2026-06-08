@@ -1,6 +1,5 @@
 package com.portfolio.portfolio.model;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -16,6 +15,7 @@ public class Project {
     private String title;
     @NotBlank
     private String description;
-
-
+    private String technologies;
+    private String githubUrl;
+    private String liveUrl;
 }
